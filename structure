@@ -1,0 +1,49 @@
+mern-blog/
+├── server/
+│   ├── package.json
+│   ├── .env.example
+│   ├── nodemon.json
+│   └── src/
+│       ├── index.js
+│       ├── config/
+│       │   └── db.js
+│       ├── models/
+│       │   ├── Post.js
+│       │   ├── Category.js
+│       │   ├── User.js
+│       │   └── Comment.js
+│       ├── routes/
+│       │   ├── posts.js
+│       │   ├── categories.js
+│       │   └── auth.js
+│       ├── controllers/
+│       │   ├── postsController.js
+│       │   ├── categoriesController.js
+│       │   └── authController.js
+│       ├── middleware/
+│       │   ├── auth.js
+│       │   ├── errorHandler.js
+│       │   └── upload.js
+│       └── utils/
+│           └── validators.js
+└── client/
+    ├── package.json
+    ├── .env.example
+    ├── vite.config.js
+    └── src/
+        ├── main.jsx
+        ├── App.jsx
+        ├── index.css
+        ├── services/
+        │   └── api.js
+        ├── hooks/
+        │   └── useFetch.js
+        ├── pages/
+        │   ├── PostsList.jsx
+        │   ├── PostView.jsx
+        │   ├── PostForm.jsx
+        │   └── Login.jsx
+        └── components/
+            ├── Navbar.jsx
+            ├── Pagination.jsx
+            └── PostCard.jsx
